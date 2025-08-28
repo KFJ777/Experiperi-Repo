@@ -1,0 +1,532 @@
+{
+	"id": "82a46774-1b7f-45e8-b905-f82657d83f7b",
+	"name": "STSTStudentCourseCopy4",
+	"timestamp": "2025-08-28T08:05:51.850Z",
+	"collection_id": "47309368-dbbb5b8c-b7d9-498f-b7e9-416c64cf64ff",
+	"folder_id": 0,
+	"environment_id": "47309368-d661f9e5-ce18-491a-9ac3-956dd506cee7",
+	"totalPass": 35,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-08-28T08:05:44.036Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "4fd712c9-26da-48c1-b71f-2512a25a26ba",
+			"name": "Get All Todo Entries",
+			"url": " https://demo.fusio-project.org/index.php",
+			"time": 2591,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify that title is equal to Fusio": true,
+				"Verify that payment currency is EUR": true,
+				"Verify that the first option under categories is authorization": true,
+				"Verify that the fourth option under categories is default": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that title is equal to Fusio": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that payment currency is EUR": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the first option under categories is authorization": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the fourth option under categories is default": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2591
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify that title is equal to Fusio": true,
+					"Verify that payment currency is EUR": true,
+					"Verify that the first option under categories is authorization": true,
+					"Verify that the fourth option under categories is default": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "bc436b45-7934-4293-9630-70e2a8809b80",
+			"name": "Get All Entries",
+			"url": " https://demo.fusio-project.org/index.php/",
+			"time": 662,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify response structure": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify response structure": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				662
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify response structure": true
+				}
+			]
+		},
+		{
+			"id": "ca30e101-59e0-40ef-ad50-36a3fde98d2e",
+			"name": "Get entry per ID - Valid ID",
+			"url": " https://demo.fusio-project.org/index.php",
+			"time": 725,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches expected title": true
+			},
+			"testPassFailCounts": {
+				"Body matches expected title": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				725
+			],
+			"allTests": [
+				{
+					"Body matches expected title": true
+				}
+			]
+		},
+		{
+			"id": "9fc18ea6-160c-4043-9661-6f69a215ada8",
+			"name": "Get entry per ID - Invalid ID(params not using TODO ID)",
+			"url": " https://demo.fusio-project.org/",
+			"time": 363,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				363
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "b1fa7d4b-84de-4fa5-8851-aa2666562ea6",
+			"name": "Get All Books",
+			"url": " https://demo.fusio-project.org/books",
+			"time": 339,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Verify Authorization header is present": true,
+				"Verify User-Agent header is present": true
+			},
+			"testPassFailCounts": {
+				"Verify Authorization header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify User-Agent header is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				339
+			],
+			"allTests": [
+				{
+					"Verify Authorization header is present": true,
+					"Verify User-Agent header is present": true
+				}
+			]
+		},
+		{
+			"id": "ce96af93-3109-4a89-9e1d-c08ad46d7380",
+			"name": "Get Books by ID",
+			"url": " https://demo.fusio-project.org/books/1",
+			"time": 337,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response time is less than 1 second": true,
+				"Content-Type is application/json": true,
+				"Response has required fields": true,
+				"'title' field is present and is a string": true,
+				"'message' field is present and is a string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1 second": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"'title' field is present and is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"'message' field is present and is a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				337
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response time is less than 1 second": true,
+					"Content-Type is application/json": true,
+					"Response has required fields": true,
+					"'title' field is present and is a string": true,
+					"'message' field is present and is a string": true
+				}
+			]
+		},
+		{
+			"id": "effe2c27-8903-44dd-b075-552e03c16bf2",
+			"name": "Get Books by Type",
+			"url": " https://demo.fusio-project.org/books?type=fiction",
+			"time": 352,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response is an object": true,
+				"Response contains expected properties": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains expected properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				352
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response is an object": true,
+					"Response contains expected properties": true
+				}
+			]
+		},
+		{
+			"id": "c169067a-3438-412c-b4b4-e4da9428917e",
+			"name": "Place a book order - using book ID",
+			"url": " https://demo.fusio-project.org/orders",
+			"time": 339,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response has Content-Type header": true
+			},
+			"testPassFailCounts": {
+				"Response has Content-Type header": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				339
+			],
+			"allTests": [
+				{
+					"Response has Content-Type header": true
+				}
+			]
+		},
+		{
+			"id": "29562ce3-9d27-481a-ae6e-69c2d950cc11",
+			"name": "Get all orders",
+			"url": " https://demo.fusio-project.org/orders",
+			"time": 589,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 404": true,
+				"Response content type is application/json": true,
+				"Response contains a success field": true,
+				"Success field is false": true,
+				"Response contains an error message field": true,
+				"Error message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response content type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains a success field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success field is false": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains an error message field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				589
+			],
+			"allTests": [
+				{
+					"Response status code is 404": true,
+					"Response content type is application/json": true,
+					"Response contains a success field": true,
+					"Success field is false": true,
+					"Response contains an error message field": true,
+					"Error message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "66f4ddbb-f937-4417-95d5-f334a55d13cc",
+			"name": "Get an order - using orderID",
+			"url": " https://demo.fusio-project.org/orders/AaX7WGCUeHH3lRwGRh57M",
+			"time": 343,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Error message is as expected": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is as expected": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				343
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Error message is as expected": true
+				}
+			]
+		},
+		{
+			"id": "3d52e9ad-47a3-41fd-b82d-f6a8f590fb4f",
+			"name": "Update an order",
+			"url": " https://demo.fusio-project.org/orders/",
+			"time": 345,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Error message is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				345
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Error message is present": true
+				}
+			]
+		},
+		{
+			"id": "ba0b642c-ad4b-4c9f-9413-bdc73f4604c7",
+			"name": "Delete an order",
+			"url": " https://demo.fusio-project.org/orders/rObASEWYlVrRX6cTAEgbt",
+			"time": 376,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Error response structure": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error response structure": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				376
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Error response structure": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 7361,
+	"collection": {
+		"requests": [
+			{
+				"id": "4fd712c9-26da-48c1-b71f-2512a25a26ba",
+				"method": "GET"
+			},
+			{
+				"id": "bc436b45-7934-4293-9630-70e2a8809b80",
+				"method": "GET"
+			},
+			{
+				"id": "ca30e101-59e0-40ef-ad50-36a3fde98d2e",
+				"method": "GET"
+			},
+			{
+				"id": "9fc18ea6-160c-4043-9661-6f69a215ada8",
+				"method": "GET"
+			},
+			{
+				"id": "b1fa7d4b-84de-4fa5-8851-aa2666562ea6",
+				"method": "GET"
+			},
+			{
+				"id": "ce96af93-3109-4a89-9e1d-c08ad46d7380",
+				"method": "GET"
+			},
+			{
+				"id": "effe2c27-8903-44dd-b075-552e03c16bf2",
+				"method": "GET"
+			},
+			{
+				"id": "c169067a-3438-412c-b4b4-e4da9428917e",
+				"method": "POST"
+			},
+			{
+				"id": "29562ce3-9d27-481a-ae6e-69c2d950cc11",
+				"method": "GET"
+			},
+			{
+				"id": "66f4ddbb-f937-4417-95d5-f334a55d13cc",
+				"method": "GET"
+			},
+			{
+				"id": "3d52e9ad-47a3-41fd-b82d-f6a8f590fb4f",
+				"method": "POST"
+			},
+			{
+				"id": "ba0b642c-ad4b-4c9f-9413-bdc73f4604c7",
+				"method": "DELETE"
+			}
+		]
+	}
+}
